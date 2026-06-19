@@ -1,0 +1,14 @@
+name: deploy prod
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simular deploy
+        run: |
+          echo "Deploying to production..."
+          sleep 2
+          echo "Deploy completed successfully"
